@@ -60,10 +60,6 @@ except Exception:
 
 app = Flask(__name__)
 
-@app.route("/")
-def health():
-    return "OK", 200
-
 DEFAULT_QUESTIONS = 40
 
 # A sheet without the four marks cannot be graded by geometry. Refusing is the
